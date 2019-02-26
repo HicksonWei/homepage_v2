@@ -13,6 +13,9 @@
         <logo />
         <vuetify-logo />
       </div>
+      <div class="chart">
+        <p>132</p>
+      </div> 
       <v-card>
         <v-card-title class="headline">
           Welcome to the Vuetify + Nuxt.js template
@@ -81,3 +84,12 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.chart {
+  background: url('~assets/img/chart.png');
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}
+</style>
