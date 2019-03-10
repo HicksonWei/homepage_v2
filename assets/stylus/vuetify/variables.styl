@@ -1,0 +1,12 @@
+@import '~vuetify/src/stylus/settings/_variables.styl'
+
+$grid-breakpoints = {
+  xs: 320px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+}
+
+// require 跟新設的變數順序在這裡是沒有差的，當 default 在前面時，新設的變數即表示 reassign；當 default 在後面時，本來就會查找前面的變數
+// 變數與 style 交錯時才需要注意變數的順序性，這裡先把變數摻在一塊才給 style 使用就沒差
