@@ -3,8 +3,8 @@ import VueScrollTo from 'vue-scrollto'
 
 Vue.use(VueScrollTo, {
   container: 'body',
-  duration: 1000,
-  easing: 'ease',
+  duration: 1500,
+  easing: 'ease-in-out',
   offset: 0,
   cancelable: true,
   onStart: false,

@@ -4,7 +4,7 @@
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 // 要裝 uglifyjs-webpack-plugin
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-const pkg = require('./package')
+// const pkg = require('./package')
 
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
@@ -23,27 +23,23 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Hank_homepage',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: 'Hank 的個人簡介' },
+      { name: 'keyword', content: '危建翰, Hank, Front-End Developer' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
+          'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons|Acme|Audiowide|Fredericka+the+Great|Fugaz+One|Aldrich|Noto+Sans+TC:400,500,700'
       },
       {
         rel: 'stylesheet',
-        href: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css'
-      },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Acme|Luckiest+Guy|Sniglet'
+        href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css'
       }
     ]
   },

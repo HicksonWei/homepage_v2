@@ -21,6 +21,7 @@ Vue.use(Vuetify, {
       lg: 992,
       xl: 1200
     },
-    scrollbarWidth: 10
+    scrollbarWidth: 0
+    // scrollbarWidth 會計入寬度，如果是 10 的話，例如原本預期 992 以下觸發的，會變成 982 以下才觸發
   }
 })
