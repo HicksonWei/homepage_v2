@@ -36,7 +36,7 @@ module.exports = {
       { property: 'og:title', content: `Hank's homepage` },
       { property: 'og:type', content: 'website' },
       { property: 'og:description', content: 'Hank 的個人簡介' },
-      { property: 'og:image', content: './homepage.png' }
+      { property: 'og:image', content: 'https://i.imgur.com/nuzLPy3.png' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },
