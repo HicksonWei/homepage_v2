@@ -105,14 +105,11 @@ export default {
       }
     },
     onResize() {
-      console.log('c')
       if (process.browser) {
-        console.log('b')
         if (window.innerWidth !== this.winWidth) {
           this.isHorizontal = true
           this.winWidth = window.innerWidth
           this.changeCarousel()
-          console.log('a')
         }
       }
     },
