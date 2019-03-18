@@ -70,6 +70,9 @@ export default {
   computed: {
     ...mapState(['headerTheme']),
     theme() {
+      if (this.headerTheme === 'top') {
+        return 'theme__top'
+      }
       if (this.headerTheme === 'hero') {
         return 'theme__hero'
       }
@@ -105,11 +108,11 @@ export default {
       display block
 
 .theme
-  &__hero
+  &__top
     .header
       &__toolbar
         background-color transparent
-        font-family: 'Fugaz One', cursive;
+        font-family 'Fugaz One', cursive
       &__title
         font-size 24px
         color #000
@@ -119,11 +122,29 @@ export default {
           font-size 16px
       &__burger
         color #1E88E5
+        .v-icon
+          transition none
+  &__hero
+    .header
+      &__toolbar
+        background-color rgba(255, 255, 255, 0.5)
+        font-family 'Fugaz One', cursive
+      &__title
+        font-size 24px
+        color #000
+      &__items
+        & ^[2..-2]__btn
+          color #1E88E5
+          font-size 16px
+      &__burger
+        color #1E88E5
+        .v-icon
+          transition none
   &__profile
     .header
       &__toolbar
-        background-color transparent
-        font-family: 'Audiowide', cursive;
+        background-color rgba(42, 172, 237, 0.6)
+        font-family 'Audiowide', cursive
       &__title
         font-size 24px
         color #B3E5FC
@@ -133,11 +154,13 @@ export default {
           color #B3E5FC
       &__burger
         color #B3E5FC
+        .v-icon
+          transition none
   &__experience
     .header
       &__toolbar
-        background-color #FFD180
-        font-family: 'Fredericka the Great', cursive
+        background-color rgba(255, 209, 128, 0.5)
+        font-family 'Fredericka the Great', cursive
       &__title
         font-size 24px
         color red
@@ -147,10 +170,12 @@ export default {
           color red
       &__burger
         color red
+        .v-icon
+          transition none
   &__skills
     .header
       &__toolbar
-        background-color transparent
+        background-color  rgba(255, 205, 210, 0.7)
         font-family 'Aldrich', sans-serif
       &__title
         font-size 24px
@@ -161,6 +186,8 @@ export default {
           color #fff
       &__burger
         color #fff
+        .v-icon
+          transition none
   &__works
     .header
       &__toolbar
@@ -175,5 +202,7 @@ export default {
           color #fff
       &__burger
         color #fff
+        .v-icon
+          transition none
 
 </style>

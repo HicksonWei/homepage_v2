@@ -357,8 +357,16 @@ export default {
   },
   mounted() {
     this.heroShow = true
+    this.setHeaderTheme('top')
     if (process.browser) {
       window.addEventListener('scroll', this.handleScroll)
+      window.addEventListener(
+        'touchmove',
+        function(e) {
+          e.preventDefault()
+        },
+        { passive: false }
+      )
     }
   },
   destroyed() {
@@ -378,34 +386,37 @@ export default {
         this.$refs.skills.getBoundingClientRect().top + window.scrollY
       const worksPos =
         this.$refs.works.getBoundingClientRect().top + window.scrollY
-      if (window.scrollY <= screenHeight / 2) {
+      if (window.scrollY <= (screenHeight * 2) / 3) {
         this.topBtnShow = false
       }
-      if (window.scrollY > screenHeight / 2) {
+      if (window.scrollY > (screenHeight * 2) / 3) {
         this.topBtnShow = true
       }
-      if (window.scrollY < profilePos) {
+      if (window.scrollY === 0) {
+        this.setHeaderTheme('top')
+      }
+      if (window.scrollY < profilePos && window.scrollY !== 0) {
         this.setHeaderTheme('hero')
       }
-      if (window.scrollY + screenHeight / 2 >= profilePos) {
+      if (window.scrollY + (screenHeight * 2) / 3 >= profilePos) {
         this.profileShow = true
       }
       if (window.scrollY + 50 >= profilePos) {
         this.setHeaderTheme('profile')
       }
-      if (window.scrollY + screenHeight / 2 >= experiencePos) {
+      if (window.scrollY + (screenHeight * 2) / 3 >= experiencePos) {
         this.experienceShow = true
       }
       if (window.scrollY + 50 >= experiencePos) {
         this.setHeaderTheme('experience')
       }
-      if (window.scrollY + screenHeight / 2 >= skillsPos) {
+      if (window.scrollY + (screenHeight * 2) / 3 >= skillsPos) {
         this.skillsShow = true
       }
       if (window.scrollY + 50 >= skillsPos) {
         this.setHeaderTheme('skills')
       }
-      if (window.scrollY + screenHeight / 2 >= worksPos) {
+      if (window.scrollY + (screenHeight * 2) / 3 >= worksPos) {
         this.worksShow = true
       }
       if (window.scrollY + 50 >= worksPos) {
@@ -474,7 +485,7 @@ export default {
     opacity 0
     transition 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1)
     h1
-      font-family: 'Fugaz One', cursive;
+      font-family 'Fugaz One', cursive;
       font-weight bold
       font-size 80px
       letter-spacing 10px
@@ -489,7 +500,7 @@ export default {
         +bp($be992)
           display block
     .sub
-      font-family: 'Acme', sans-serif
+      font-family 'Acme', sans-serif
       font-size 36px
       margin 10px 0 30px 0
       +bp($be1200)
@@ -598,7 +609,7 @@ export default {
     text-align center
     margin 90px 0 40px 0
     font-size 80px
-    font-family: 'Fredericka the Great', cursive;
+    font-family 'Fredericka the Great', cursive;
     letter-spacing 5px
     opacity 0
     transition 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1)
@@ -656,7 +667,7 @@ export default {
     text-align center
     margin 90px 0 40px 0
     font-size 80px
-    font-family: 'Aldrich', sans-serif;
+    font-family 'Aldrich', sans-serif
     letter-spacing 5px
     color #fff
     position relative

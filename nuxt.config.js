@@ -28,7 +28,14 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Hank 的個人簡介' },
-      { name: 'keyword', content: '危建翰, Hank, Front-End Developer' }
+      {
+        hid: 'keyword',
+        name: 'keyword',
+        content: '危建翰, Hank, Front-End Developer'
+      },
+      { property: 'og:title', content: `Hank's homepage` },
+      { property: 'og:description', content: 'Hank 的個人簡介' },
+      { property: 'og:image', content: '~/assets/img/homepage.png' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },

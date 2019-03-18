@@ -74,7 +74,8 @@ export default {
       cellCount: 0,
       isHorizontal: true,
       theta: null,
-      radius: null
+      radius: null,
+      winWidth: 0
     }
   },
   computed: {
@@ -104,8 +105,16 @@ export default {
       }
     },
     onResize() {
-      this.isHorizontal = true
-      this.changeCarousel()
+      console.log('c')
+      if (process.browser) {
+        console.log('b')
+        if (window.innerWidth !== this.winWidth) {
+          this.isHorizontal = true
+          this.winWidth = window.innerWidth
+          this.changeCarousel()
+          console.log('a')
+        }
+      }
     },
     rotateCarousel() {
       const angle = this.theta * this.selectedIndex * -1
