@@ -360,13 +360,6 @@ export default {
     this.setHeaderTheme('top')
     if (process.browser) {
       window.addEventListener('scroll', this.handleScroll)
-      window.addEventListener(
-        'touchmove',
-        function(e) {
-          e.preventDefault()
-        },
-        { passive: false }
-      )
     }
   },
   destroyed() {

@@ -34,8 +34,9 @@ module.exports = {
         content: '危建翰, Hank, Front-End Developer'
       },
       { property: 'og:title', content: `Hank's homepage` },
+      { property: 'og:type', content: 'website' },
       { property: 'og:description', content: 'Hank 的個人簡介' },
-      { property: 'og:image', content: '~/assets/img/homepage.png' }
+      { property: 'og:image', content: './homepage.png' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },
