@@ -87,7 +87,7 @@
             </p>
             <br>
             <p>
-              進入接案公司之後，接觸到許多與銀行相關的專案，對於區塊鏈、加密貨幣也略有涉獵。除此之外，也和各個領域的人才有了更多的交流，不論是與客戶或 PM 溝通需求、與設計師協調網頁規劃，或是與後端工程師合作串接 API，都很大程度地拓展了我的視野。未來期勉自己繼續虛心學習，努力精進，為自己、公司乃至於社會，解決更多的難題。
+              成為前端工程師之後，接觸過小型專案 (例如銀行官網切版或 campaign site)，也曾經手維護大型系統 (CRM 和 POS)。最重要的是和各個領域的人才有了更多的交流，不論是與客戶或 PM 溝通需求、與設計師協調網頁規劃，或是與後端工程師合作串接 API，都很大程度地拓展了我的視野。未來期勉自己繼續虛心學習，努力精進，為自己、公司乃至於社會，解決更多的難題。
             </p>
           </div>
         </div>
@@ -165,7 +165,43 @@
                 2018 ~
               </p>
               <p class="experience__content">
-                具備銀行、加密貨幣等網頁開發經驗，能與客戶或 PM 溝通需求，並和設計師及後端工程師協調作業。
+                具備銀行、算力交易網站等網頁開發經驗，能與客戶或 PM 溝通需求，並和設計師及後端工程師協調作業。
+              </p>
+            </v-card-text>
+          </v-card>
+        </v-timeline-item>
+        <v-timeline-item color="green lighten-2 experience__card" icon="fas fa-code" fill-dot large>
+          <v-card color="green lighten-2" dark>
+            <v-card-title class="experience__company">
+              承暉資訊整合股份有限公司
+            </v-card-title>
+            <v-card-text class="white text--primary">
+              <p class="experience__title">
+                前端工程師
+              </p>
+              <p class="experience__year">
+                2019 ~
+              </p>
+              <p class="experience__content">
+                大型 CRM 客服系統產品開發、需求整合及維護。
+              </p>
+            </v-card-text>
+          </v-card>
+        </v-timeline-item>
+        <v-timeline-item color="orange lighten-2 experience__card" icon="fas fa-code" fill-dot large>
+          <v-card color="orange lighten-2" dark>
+            <v-card-title class="experience__company">
+              ECFIT 英特泰斗股份有限公司
+            </v-card-title>
+            <v-card-text class="white text--primary">
+              <p class="experience__title">
+                前端工程師
+              </p>
+              <p class="experience__year">
+                2019 ~ 2020
+              </p>
+              <p class="experience__content">
+                POS 系統重構 (前後端分離)。
               </p>
             </v-card-text>
           </v-card>
@@ -266,7 +302,7 @@
                       class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal white--text"
                       style="height: 100%;"
                     >
-                      <p>能使用 Vue、Nuxt (Vue SSR Framework) 框架開發網站，具備銀行業、加密貨幣等網站開發經驗。</p> 
+                      <p>能使用 Vue、Nuxt (Vue SSR Framework) 框架開發網站，具備小型專案 (銀行 campaign site) 與大型系統 (CRM、POS) 開發經驗。</p> 
                     </div>
                   </v-expand-transition>
                 </div>
@@ -278,7 +314,7 @@
                     Vue / Nuxt
                   </h3>
                   <p v-show="$vuetify.breakpoint.lgAndDown" class="grey--text text--darken-3">
-                    能使用 Vue、Nuxt (Vue SSR Framework) 框架開發網站，具備銀行業、加密貨幣等網站開發經驗。
+                    能使用 Vue、Nuxt (Vue SSR Framework) 框架開發網站，具備小型專案 (銀行 campaign site) 與大型系統 (CRM、POS) 開發經驗。
                   </p>
                 </v-card-text>
               </v-card>

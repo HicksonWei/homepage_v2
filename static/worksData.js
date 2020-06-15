@@ -31,10 +31,10 @@ export const worksList = {
       content: '簡易 todoList (LocalStorage)'
     },
     {
-      link: 'https://afternoon-ridge-75133.herokuapp.com/',
-      img: 'works6.jpg',
-      title: 'todoList',
-      content: 'Express + Firebase 實作 todoList'
+      link: 'https://audio-searcher.now.sh/',
+      img: 'works7.jpg',
+      title: '單字發音 audio 程式碼擷取工具',
+      content: 'Nuxt + Express API'
     }
   ]
 }

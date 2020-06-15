@@ -134,7 +134,7 @@ module.exports = {
   // 設定 https 憑證
   server: {
     // port: 8000,
-    // host: '0.0.0.0',
+    // host: '0.0.0.0'
     // https: {
     //   key: fs.readFileSync(path.resolve(__dirname, 'example.com+5-key.pem')),
     //   cert: fs.readFileSync(path.resolve(__dirname, 'example.com+5.pem'))
