@@ -19,10 +19,10 @@ export const worksList = {
       content: 'Bootstrap 4 + gulp 管理'
     },
     {
-      link: 'https://member-management-system.herokuapp.com/',
-      img: 'works4.jpg',
-      title: '留言板',
-      content: 'Express + Firebase 實作簡易登入留言系統'
+      link: 'https://hicksonwei.github.io/meme-generator/',
+      img: 'works4.png',
+      title: 'Meme generator',
+      content: 'Vanilla JS + gulp 管理'
     },
     {
       link: 'https://hicksonwei.github.io/todos/',
@@ -32,7 +32,7 @@ export const worksList = {
     },
     {
       link: 'https://audio-searcher.now.sh/',
-      img: 'works7.jpg',
+      img: 'works6.jpg',
       title: '單字發音 audio 程式碼擷取工具',
       content: 'Nuxt + Express API'
     }
