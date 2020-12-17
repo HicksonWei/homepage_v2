@@ -7,10 +7,10 @@ export const worksList = {
       content: '客製 RWD + SCSS + jQuery'
     },
     {
-      link: 'https://hicksonwei.github.io/HexSchool_JS_JSON/',
-      img: 'works2.jpg',
-      title: '高雄旅遊資訊',
-      content: '使用 JSON 格式資料渲染畫面'
+      link: 'https://web-dev-memo.netlify.app/',
+      img: 'works2.png',
+      title: '個人 Blog',
+      content: '使用 Hugo 建置'
     },
     {
       link: 'https://hicksonwei.github.io/Landing_Page/',
