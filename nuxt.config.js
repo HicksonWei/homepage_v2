@@ -17,8 +17,7 @@ const routerBase =
 // 部署靜態網頁至 Github Page 時，由於首頁路徑不是 / 而是專案名所以會出錯，但如果直接改 router base 在本地端就會出錯，所以要用 conditional 寫法，再灑到 module.exports 裡面
 
 module.exports = {
-  mode: 'universal',
-
+  target: 'static',
   /*
   ** Headers of the page
   */
