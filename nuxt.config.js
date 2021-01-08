@@ -74,9 +74,13 @@ module.exports = {
   ** Nuxt.js modules
   */
   // 用來將 custom variables 引入組件
-  modules: ['@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/gtm'],
   styleResources: {
     stylus: ['~assets/stylus/custom/custom.styl']
+  },
+  gtm: {
+    id: 'GTM-5LDLNLJ',
+    enabled: true
   },
   /*
   ** Build configuration
@@ -87,15 +91,6 @@ module.exports = {
     loaders: {
       stylus: {
         import: ['~assets/stylus/vuetify/variables.styl']
-      }
-    },
-    postcss: {
-      preset: {
-        autoprefixer: {
-          browsers: ['IE 11', 'last 3 versions', '> 1%'],
-          // 支援 IE 11 display: grid
-          grid: true
-        }
       }
     },
     optimization: {
